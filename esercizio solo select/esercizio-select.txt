@@ -40,3 +40,9 @@ Selezionare tutti i corsi di laurea magistrale
 SELECT * 
 FROM `degrees` 
 WHERE `level` = 'Magistrale';
+
+Da quanti dipartimenti è composta l'università?:
+
+SELECT COUNT(`id`) AS totali_dipartimenti 
+FROM `departments`;
+
