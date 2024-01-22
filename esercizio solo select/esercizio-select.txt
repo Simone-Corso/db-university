@@ -46,3 +46,9 @@ Da quanti dipartimenti è composta l'università?:
 SELECT COUNT(`id`) AS totali_dipartimenti 
 FROM `departments`;
 
+Quanti sono gli insegnanti che non hanno un numero di telefono? :
+
+SELECT COUNT(*)
+FROM `teachers` 
+WHERE `phone` IS NULL OR `phone` = '';
+
