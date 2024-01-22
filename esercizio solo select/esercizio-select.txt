@@ -11,3 +11,16 @@ Selezionare tutti i corsi che valgono più di 10 crediti :
 SELECT `id`, `degree_id`, `description`, `name`, `period`, `year`, `cfu` 
 FROM `courses` 
 WHERE `cfu` > 10;
+
+
+Selezionare tutti gli studenti che hanno più di 30 anni :
+
+SELECT * 
+FROM `students` 
+WHERE `date_of_birth` / 365 > 30;
+
+
+Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di
+laurea :
+
+SELECT * FROM `courses` WHERE `period` = 2 AND `year` = 2;

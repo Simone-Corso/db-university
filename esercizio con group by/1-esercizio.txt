@@ -12,3 +12,5 @@ SELECT `id`, `name`, `address`,
 (SELECT COUNT(*) FROM `departments` AS primo_insegnante WHERE primo_insegnante.address = primo_insegnante.address) AS insegnantinellostessodipartimento 
 FROM `departments` AS insegnanti;
 
+Calcolare la media dei voti di ogni appello d'esame:
+
