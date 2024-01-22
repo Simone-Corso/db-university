@@ -1,0 +1,4 @@
+SELECT YEAR(`enrolment_date`) AS Anno, COUNT(*) AS NumeroIscritti 
+FROM `students` 
+GROUP BY YEAR(`enrolment_date`) 
+ORDER BY Anno;
