@@ -14,3 +14,12 @@ FROM `departments` AS insegnanti;
 
 Calcolare la media dei voti di ogni appello d'esame:
 
+SELECT `exam_id`, AVG(`vote`) AS voto_medio 
+FROM `exam_student` 
+GROUP BY `exam_id`;
+
+Contare quanti corsi di laurea ci sono per ogni dipartimento:
+
+SELECT `department_id`, COUNT(DISTINCT `id`) AS totali_laureati 
+FROM `degrees` 
+GROUP BY `department_id`;
